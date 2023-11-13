@@ -12,14 +12,14 @@
         <Image Stretch="Uniform" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="/Image/1580222994_unnamed.jpg"/>
         <TextBlock HorizontalAlignment="Left" Margin="123,19,0,0" TextWrapping="Wrap" Text="Кинотеатр 6 звезд" VerticalAlignment="Top" Height="65" Width="128" FontSize="23" FontWeight="Bold" Foreground="#698AFF" TextDecorations="Underline"/>
 
-        <Button  Style="{StaticResource MaterialDesignFlatButton}" Content="В меню" FontSize="15" Margin="395,52,10,490" Cursor="Hand">
+        <Button  Style="{StaticResource MaterialDesignFlatButton}" Content="В меню" FontSize="15" Margin="395,52,10,490" Cursor="Hand" Click="Button_Click_Main">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button  Style="{StaticResource MaterialDesignFlatButton}" Content="Найти" FontSize="15" Margin="395,174,10,418" Cursor="Hand">
+        <Button  Style="{StaticResource MaterialDesignFlatButton}" Content="Найти" FontSize="15" Margin="395,154,10,438" Cursor="Hand">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>

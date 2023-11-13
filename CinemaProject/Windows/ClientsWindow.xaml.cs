@@ -23,5 +23,12 @@ namespace CinemaProject.Windows
         {
             InitializeComponent();
         }
+
+        private void Button_Click_Main(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
+        }
     }
 }
