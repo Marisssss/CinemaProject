@@ -1,0 +1,38 @@
+﻿<Window x:Class="CinemaProject.Windows.SessionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaProject.Windows"
+        mc:Ignorable="d"
+        Title="Сеансы" Height="650" Width="800" MaxWidth="800" MinWidth="700"  MaxHeight="800" MinHeight="650"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="5,5,5,5">
+        <Image Stretch="Uniform" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="/Image/1580222994_unnamed.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="123,19,0,0" TextWrapping="Wrap" Text="Кинотеатр 6 звезд" VerticalAlignment="Top" Height="65" Width="128" FontSize="23" FontWeight="Bold" Foreground="#698AFF" TextDecorations="Underline"/>
+
+        <Button  Style="{StaticResource MaterialDesignFlatButton}" Content="В меню" FontSize="15" Margin="395,52,10,490" Cursor="Hand" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button  Style="{StaticResource MaterialDesignFlatButton}" Content="Найти" FontSize="15" Margin="395,174,10,418" Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Добавить" Margin="480,456,10,86"   Cursor="Hand" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button Content="Обновить" Margin="480,517,5,25"   Cursor="Hand" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button Content="Удалить" Margin="480,391,10,151"   Cursor="Hand" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button Content="Выгрузить" Margin="480,322,10,220"   Cursor="Hand" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+
+        <DataGrid Margin="0,211,315,0">
+
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+﻿<Window x:Class="CinemaProject.Windows.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaProject.Windows"
+        mc:Ignorable="d"        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Авторизация" Height="450" Width="800" MaxWidth="1000" MinWidth="700"  MaxHeight="750" MinHeight="600"
+        WindowStartupLocation="CenterScreen">
+  <Grid Cursor="">
+        <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Привет,мы знакомы?" VerticalAlignment="Top" Margin="0,35,0,0" FontWeight="Bold" FontSize="30" Foreground="#698AFF"/>
+
+        <Button HorizontalAlignment="Left" Style="{StaticResource MaterialDesignFlatDarkBgButton}" FontSize="15"  Background="#698AFF" Content="Войти" Width="141" RenderTransformOrigin="-1.516,0.829" Margin="180,329,0,38" Click="Button_Enter">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Style="{StaticResource MaterialDesignFlatButton}" Content="Регистрация" FontSize="15" Width="141" RenderTransformOrigin="-1.516,0.829" Margin="480,329,0,38" Click="Button_Reg" Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <StackPanel Margin="198,128,202,167"  >
+
+            <TextBox x:Name="TextBoxLog" Padding="10" materialDesign:HintAssist.Hint="Логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            <PasswordBox x:Name="TextBoxPass" Padding="10" materialDesign:HintAssist.Hint="Пароль" Style="{StaticResource MaterialDesignFilledPasswordBox}"/>
+            <TextBox x:Name="TextBoxEmail" Padding="10" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        </StackPanel>
+      
+        <TextBlock x:Name="qwe" HorizontalAlignment="Left" Margin="514,102,0,0"  VerticalAlignment="Top" Height="20" Width="235"/>
+
+    </Grid>
+
+</Window>
