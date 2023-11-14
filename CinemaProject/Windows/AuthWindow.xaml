@@ -9,9 +9,9 @@
         Title="Авторизация" Height="450" Width="800" MaxWidth="1000" MinWidth="700"  MaxHeight="750" MinHeight="600"
         WindowStartupLocation="CenterScreen">
   <Grid Cursor="">
-        <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Привет,мы знакомы?" VerticalAlignment="Top" Margin="0,35,0,0" FontWeight="Bold" FontSize="30" Foreground="#698AFF"/>
+        <TextBlock HorizontalAlignment="Center" FontFamily="Arial" TextWrapping="Wrap" Text="Привет,мы знакомы?" VerticalAlignment="Top" Margin="0,35,0,0" FontWeight="Bold" FontSize="30" Foreground="#698AFF"/>
 
-        <Button HorizontalAlignment="Left" Style="{StaticResource MaterialDesignFlatDarkBgButton}" FontSize="15"  Background="#698AFF" Content="Войти" Width="141" RenderTransformOrigin="-1.516,0.829" Margin="180,329,0,38" Click="Button_Enter">
+        <Button HorizontalAlignment="Left" FontFamily="Arial" Style="{StaticResource MaterialDesignFlatDarkBgButton}" FontSize="15"  Background="#698AFF" Content="Войти" Width="141" RenderTransformOrigin="-1.516,0.829" Margin="180,329,0,38" Click="Button_Enter">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -19,7 +19,7 @@
             </Button.Resources>
         </Button>
 
-        <Button HorizontalAlignment="Left" Style="{StaticResource MaterialDesignFlatButton}" Content="Регистрация" FontSize="15" Width="141" RenderTransformOrigin="-1.516,0.829" Margin="480,329,0,38" Click="Button_Reg" Cursor="Hand">
+        <Button HorizontalAlignment="Left" FontFamily="Arial" Style="{StaticResource MaterialDesignFlatButton}" Content="Регистрация" FontSize="15" Width="141" RenderTransformOrigin="-1.516,0.829" Margin="480,329,0,38" Click="Button_Reg" Cursor="Hand">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -29,12 +29,10 @@
 
         <StackPanel Margin="198,128,202,167"  >
 
-            <TextBox x:Name="TextBoxLog" Padding="10" materialDesign:HintAssist.Hint="Логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            <TextBox x:Name="TextBoxLog" Padding="10"  materialDesign:HintAssist.Hint="Логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
             <PasswordBox x:Name="TextBoxPass" Padding="10" materialDesign:HintAssist.Hint="Пароль" Style="{StaticResource MaterialDesignFilledPasswordBox}"/>
             <TextBox x:Name="TextBoxEmail" Padding="10" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
         </StackPanel>
-      
-        <TextBlock x:Name="qwe" HorizontalAlignment="Left" Margin="514,102,0,0"  VerticalAlignment="Top" Height="20" Width="235"/>
 
     </Grid>
 

@@ -11,12 +11,12 @@
 
     <Grid Margin="5,5,5,5">
         <Image Stretch="Uniform" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="/Image/1580222994_unnamed.jpg"/>
-        <TextBlock HorizontalAlignment="Left" Margin="123,19,0,0" TextWrapping="Wrap" Text="Кинотеатр 6 звезд" VerticalAlignment="Top" Height="65" Width="128" FontSize="23" FontWeight="Bold" Foreground="#698AFF" TextDecorations="Underline"/>
+        <TextBlock HorizontalAlignment="Left" Margin="123,19,0,0" TextWrapping="Wrap" Text="Кинотеатр 6 звезд" VerticalAlignment="Top" Height="65" Width="128" FontSize="23" FontWeight="Bold" Foreground="#698AFF" TextDecorations="Underline" FontFamily="Arial"/>
 
 
-        <Button Content="Сотрудники" Margin="190,208,190,334" Cursor="Hand" Click="Button_Click_Employee"/>
-        <Button Content="Клиенты" Margin="190,287,189,255" Cursor="Hand" Click="Button_Click_Client"/>
-        <Button Content="Сеансы" Margin="190,379,189,163" Cursor="Hand" Click="Button_Click_Session"/>
-        <Button Content="Выйти"  Margin="190,479,189,63"   Cursor="Hand" Click="Button_Click_Exit"/>
+        <Button Content="Сотрудники" Margin="190,208,190,334" Cursor="Hand" Click="Button_Click_Employee" FontFamily="Arial"/>
+        <Button Content="Клиенты" Margin="190,287,189,255" Cursor="Hand" Click="Button_Click_Client" FontFamily="Arial"/>
+        <Button Content="Сеансы" Margin="190,379,189,163" Cursor="Hand" Click="Button_Click_Session" FontFamily="Arial"/>
+        <Button Content="Выйти"  Margin="190,479,189,63"   Cursor="Hand" Click="Button_Click_Exit" FontFamily="Arial"/>
     </Grid>
 </Window>
