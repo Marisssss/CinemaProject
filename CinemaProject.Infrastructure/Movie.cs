@@ -16,11 +16,13 @@ namespace CinemaProject.Infrastructure
         }
 
         [Key]
-        public long ID_movie { get; set; }
+        [Column("ID_movie")]
+        public long IdMovie { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Name_movie { get; set; }
+        [Column("Name_movie")]
+        public string NameMovie { get; set; }
 
         public decimal Rating { get; set; }
 
