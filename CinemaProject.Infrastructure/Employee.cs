@@ -10,28 +10,34 @@ namespace CinemaProject.Infrastructure
     public partial class EmployeeEntity
     {
         [Key]
-        public long ID_employee { get; set; }
+        [Column("ID_employee")]
+        public long IdEmployee { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Last_name_employee { get; set; }
+        [Column("Last_name_employee")]
+        public string LastNameEmployee { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Name_employee { get; set; }
+        [Column("Name_employee")]
+        public string NameEmployee { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Middle_name_employee { get; set; }
+        [Column("Middle_name_employee")]
+        public string MiddleNameEmployee { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Date_of_birth { get; set; }
+        [Column("Date_of_birth")]
+        public string DateOfBirth { get; set; }
 
         [StringLength(2147483647)]
         public string Floor { get; set; }
 
-        public long ID_post { get; set; }
+        [Column("ID_post")]
+        public long IdPost { get; set; }
 
         public virtual PostEntity Post { get; set; }
     }
