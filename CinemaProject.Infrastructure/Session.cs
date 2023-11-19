@@ -16,21 +16,27 @@ namespace CinemaProject.Infrastructure
         }
 
         [Key]
-        public long ID_session { get; set; }
+        [Column("ID_session")]
+        public long IdSession { get; set; }
 
         public long Cost { get; set; }
 
-        public long Number_of_client { get; set; }
+        [Column("Number_of_client")]
+        public long NumberOfClient { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Session_start_time { get; set; }
+        [Column("Session_start_time")]
+        public string SessionStartTime { get; set; }
 
-        public decimal Session_end_time { get; set; }
+        [Column("Session_end_time")]
+        public decimal SessionEndTime { get; set; }
 
-        public long ID_movie { get; set; }
+        [Column("ID_movie")]
+        public long IdMovie { get; set; }
 
-        public long ID_hall { get; set; }
+        [Column("ID_hall")]
+        public long IdHall { get; set; }
 
         public virtual HallEntity Hall { get; set; }
 
