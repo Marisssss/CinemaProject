@@ -10,7 +10,8 @@ namespace CinemaProject.Infrastructure
     public partial class CinemaEntity
     {
         [Key]
-        public long ID_cinema { get; set; }
+        [Column("ID_cinema")]
+        public long IdCinema { get; set; }
 
         [Required]
         [StringLength(2147483647)]
@@ -18,6 +19,7 @@ namespace CinemaProject.Infrastructure
 
         [Required]
         [StringLength(2147483647)]
-        public string Name_cinema { get; set; }
+        [Column("Name_cinema")]
+        public string NameCinema { get; set; }
     }
 }
