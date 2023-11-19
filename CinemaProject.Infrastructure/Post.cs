@@ -16,11 +16,13 @@ namespace CinemaProject.Infrastructure
         }
 
         [Key]
-        public long ID_post { get; set; }
+        [Column("ID_post")]
+        public long IdPost { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Name_post { get; set; }
+        [Column("Name_post")]
+        public string NamePost { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EmployeeEntity> Employee { get; set; }
