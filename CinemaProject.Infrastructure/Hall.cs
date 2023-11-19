@@ -16,9 +16,11 @@ namespace CinemaProject.Infrastructure
         }
 
         [Key]
-        public long ID_hall { get; set; }
+        [Column("ID_hall")]
+        public long IdHall { get; set; }
 
-        public long Number_of_seats { get; set; }
+        [Column("Number_of_seats")]
+        public long NumberOfSeats { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SessionEntity> Session { get; set; }
