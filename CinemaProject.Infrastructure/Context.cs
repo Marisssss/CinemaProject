@@ -12,13 +12,13 @@ namespace CinemaProject.Infrastructure
         {
         }
 
-        public virtual DbSet<CinemaEntity> Cinema { get; set; }
-        public virtual DbSet<ClientEntity> Client { get; set; }
-        public virtual DbSet<EmployeeEntity> Employee { get; set; }
-        public virtual DbSet<HallEntity> Hall { get; set; }
-        public virtual DbSet<MovieEntity> Movie { get; set; }
-        public virtual DbSet<PostEntity> Post { get; set; }
-        public virtual DbSet<SessionEntity> Session { get; set; }
+        public virtual DbSet<CinemaEntity> Cinemas { get; set; }
+        public virtual DbSet<ClientEntity> Clients { get; set; }
+        public virtual DbSet<EmployeeEntity> Employees { get; set; }
+        public virtual DbSet<HallEntity> Halls { get; set; }
+        public virtual DbSet<MovieEntity> Movies { get; set; }
+        public virtual DbSet<PostEntity> Posts { get; set; }
+        public virtual DbSet<SessionEntity> Sessions { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -47,7 +47,7 @@ namespace CinemaProject.Infrastructure
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<SessionEntity>()
-                .Property(e => e.Session_end_time)
+                .Property(e => e.SessionEndTime)
                 .HasPrecision(53, 0);
         }
     }
