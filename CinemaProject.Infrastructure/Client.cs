@@ -16,19 +16,23 @@ namespace CinemaProject.Infrastructure
         }
 
         [Key]
-        public long ID_client { get; set; }
+        [Column("ID_client")]
+        public long IdClient { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Last_name_client { get; set; }
+        [Column("Last_name_client")]
+        public string LastNameClient { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Name_client { get; set; }
+        [Column("Name_client")]
+        public string NameClient { get; set; }
 
         [Required]
         [StringLength(2147483647)]
-        public string Middle_name_client { get; set; }
+        [Column("Middle_name_client ")]
+        public string MiddleNameClient { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SessionEntity> Session { get; set; }
