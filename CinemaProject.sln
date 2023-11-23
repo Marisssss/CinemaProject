@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaProject", "CinemaProject\CinemaProject.csproj", "{3C03E59C-81B1-4EA3-B369-18605EDA3820}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3A62D7D0-E639-41FB-AB58-FA2144E5B944} = {3A62D7D0-E639-41FB-AB58-FA2144E5B944}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaProject.Infrastructure", "CinemaProject.Infrastructure\CinemaProject.Infrastructure.csproj", "{3A62D7D0-E639-41FB-AB58-FA2144E5B944}"
 EndProject

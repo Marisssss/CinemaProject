@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaProject.Infrastructure.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,13 @@ namespace CinemaProject.Windows
     /// </summary>
     public partial class ClientsWindow : Window
     {
+        private CinemaRepository _repository; 
         public ClientsWindow()
         {
             InitializeComponent();
+            _repository = new CinemaRepository();
+            ClientGrid.ItemsSource = _repository.GetList();
+
         }
 
         private void Button_Click_Main(object sender, RoutedEventArgs e)

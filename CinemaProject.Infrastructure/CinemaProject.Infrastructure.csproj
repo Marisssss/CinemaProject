@@ -65,12 +65,22 @@
     <Compile Include="Cinema.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Context.cs" />
+    <Compile Include="Database\CinemaRepository.cs" />
+    <Compile Include="Database\ClientRepository.cs" />
+    <Compile Include="Database\EmployeeRepository.cs" />
+    <Compile Include="Database\HallRepository.cs" />
+    <Compile Include="Database\IBaseRepository.cs" />
+    <Compile Include="Database\MovieRepository.cs" />
+    <Compile Include="Database\PostRepository.cs" />
+    <Compile Include="Database\SessionRepository.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Hall.cs" />
+    <Compile Include="Mappers\CinemaMapper.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
+    <Compile Include="ViewModel\CinemaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
